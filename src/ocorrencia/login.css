@@ -4,7 +4,7 @@
     margin: 0%;
     border: none;
 }
-.king {
+.king-login {
     width: 100%;
     height: 100%;
     display: flex;
@@ -58,10 +58,12 @@
     width: 170px;
 }
 .input-two {
-    width: 200px;
+    width: 250px;
     margin: 20px;
-    height: 20px;
+    height: 25px;
     border-radius: 6px;
+    background-color: var(--primary);
+    color: var(--white-and-black);
 }
 .botao-entrar {
     background-color: 	#1E3A8A;

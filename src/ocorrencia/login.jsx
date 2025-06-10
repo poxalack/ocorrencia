@@ -7,7 +7,7 @@ import Home from "./home";
 export default function Login() {
     return (
         <>
-            <div className="king">
+            <div className="king-login">
                 <div className="one">
                     <h1 className="h1-one">Inicie no nosso site!</h1>
                     <p className="p-one">Faça seu login aqui professor, após esse processo você<br /> terá acesso a todas as nossas opções.</p>
@@ -18,7 +18,7 @@ export default function Login() {
                     <h1 className="h1-login">Login</h1>
                     <input type="email" placeholder="G-mail ou Matricula" className="input-two" />
                     <input type="password" placeholder="Senha" className="input-two" />
-                    <Link to='./home'>
+                    <Link to={'./home'}>
                         <button className="botao-entrar">Entrar</button>
                     </Link>
                 </div>

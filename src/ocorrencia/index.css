@@ -15,8 +15,8 @@
 }
 
 [data-theme="dark"] {
-    --primary: black;
-    --secondary: 	#2C2C2C;
+    --primary: #2C2C2C;
+    --secondary: 	black;
     --secondary-contraria: #F4F4F4;
     --white-and-black: #F4F4F4;
     --color-white-and-black: black;
