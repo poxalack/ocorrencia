@@ -7,6 +7,7 @@
 }
 :root {
     --primary: white;
+    --primary-contraria: #444;
     --secondary: #F4F4F4;
     --secondary-contraria: #2C2C2C;
     --white-and-black: black;
@@ -15,15 +16,16 @@
 }
 
 [data-theme="dark"] {
-    --primary: #2C2C2C;
-    --secondary: 	black;
+    --primary: #444;
+    --primary-contraria: white;
+    --secondary: 	#2C2C2C;
     --secondary-contraria: #F4F4F4;
     --white-and-black: #F4F4F4;
     --color-white-and-black: black;
-    --white-and-blue: white;
+    --white-and-blue: #1E3A8A;
 }
 a {
-    color: black;
+    color: var(--white-and-black);
     text-decoration: none;
     font-family: "Roboto", sans-serif;
 }
@@ -31,6 +33,15 @@ a {
 li {
     list-style-type: none;
     margin: 20px;
+    flex-direction: row;
+    display: flex;
+}
+ol {
+    font-family: "Roboto", sans-serif;
+}
+.li-button {
+    display: flex;
+    flex-direction: row;
 }
 .botao-login {
     background-color: #1E3A8A;

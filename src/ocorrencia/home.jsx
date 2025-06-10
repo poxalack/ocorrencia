@@ -4,32 +4,36 @@ import Index from "./index";
 import Login from "./login";
 import './home.css';
 export default function Home() {
-    const toggleTheme = () => {
-        const currentTheme = document.documentElement.getAttribute('data-theme');
-        const nextTheme = currentTheme === 'dark' ? 'light' : 'dark';
-        document.documentElement.setAttribute('data-theme', nextTheme);
-        localStorage.setItem('theme', nextTheme);
+    const alternarTema = () => {
+        const temaAtual = document.documentElement.getAttribute('data-theme');
+        const proximoTema = temaAtual === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', proximoTema);
+        localStorage.setItem('tema', proximoTema);
     };
 
     useEffect(() => {
-        const savedTheme = localStorage.getItem('theme');
-        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        const theme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
-        document.documentElement.setAttribute('data-theme', theme);
+        const temaSalvo = localStorage.getItem('tema');
+        const sistemaPrefereEscuro = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const tema = temaSalvo || (sistemaPrefereEscuro ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', tema);
     }, []);
+
     return (
         <>
-<div className="main-home">
-            <div className="head">
-                <div className="head-titulo">
-                    <h1><a href="/" className="h1-head">Ocorrências</a></h1>
+            <div className="main-home">
+                <div className="head">
+                    <div className="head-titulo">
+                        <h1><a href="/" className="h1-head">Ocorrências</a></h1>
+                    </div>
+                    <div className="li-button">
+                        <li>
+                            <ol><a href="./model/aplicarOcoreencia" className="aplicar-a">APLICAR</a></ol>
+                            <ol><a href="./model/aplicarOcoreencia" className="historico-a">HITÓRICO</a></ol>
+                        </li>
+                        <button className="botao-tema" onClick={alternarTema}>Tema</button>
+                    </div>
                 </div>
-                <div className="li-button">
-                    <button className="botao-tema" onClick={toggleTheme}>Tema</button>
-                </div>
-            </div>
-            
-                <p>suzi</p>
+                <h1></h1>
             </div>
         </>
     )

@@ -4,19 +4,20 @@ import './index.css';
 import Login from "./login";
 
 export default function Index() {
-   const toggleTheme = () => {
-      const currentTheme = document.documentElement.getAttribute('data-theme');
-      const nextTheme = currentTheme === 'dark' ? 'light' : 'dark';
-      document.documentElement.setAttribute('data-theme', nextTheme);
-      localStorage.setItem('theme', nextTheme);
+   const alternarTema = () => {
+      const temaAtual = document.documentElement.getAttribute('data-theme');
+      const proximoTema = temaAtual === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', proximoTema);
+      localStorage.setItem('tema', proximoTema);
    };
 
    useEffect(() => {
-      const savedTheme = localStorage.getItem('theme');
-      const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      const theme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
-      document.documentElement.setAttribute('data-theme', theme);
+      const temaSalvo = localStorage.getItem('tema');
+      const sistemaPrefereEscuro = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const tema = temaSalvo || (sistemaPrefereEscuro ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', tema);
    }, []);
+
 
    return (
       <>
@@ -28,7 +29,7 @@ export default function Index() {
                <Link to='./login'>
                   <button className="botao-login">Login</button>
                </Link>
-               <button className="botao-tema" onClick={toggleTheme}>Tema</button>
+               <button className="botao-tema" onClick={alternarTema}>Tema</button>
             </div>
          </div>
          <div className="main">
