@@ -26,9 +26,9 @@ export default function Home() {
                         <h1><a href="/" className="h1-head">Ocorrências</a></h1>
                     </div>
                     <div className="li-button">
-                        <li>
-                            <ol><a href="./model/aplicarOcoreencia" className="aplicar-a">APLICAR</a></ol>
-                            <ol><a href="./model/aplicarOcoreencia" className="historico-a">HITÓRICO</a></ol>
+                        <li className="li-head">
+                            <ol><Link to="/ocorrencia" className="aplicar-a">APLICAR</Link></ol>
+                            <ol><Link to="/historicoOcorrencia" className="historico-a">HISTÓRICO</Link></ol>
                         </li>
                         <button className="botao-tema" onClick={alternarTema}>Tema</button>
                     </div>

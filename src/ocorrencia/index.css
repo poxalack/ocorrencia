@@ -30,13 +30,13 @@ a {
     font-family: "Roboto", sans-serif;
 }
 
-li {
+.li-head {
     list-style-type: none;
     margin: 20px;
     flex-direction: row;
     display: flex;
 }
-ol {
+ol-head {
     font-family: "Roboto", sans-serif;
 }
 .li-button {

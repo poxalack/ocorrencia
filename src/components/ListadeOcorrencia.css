@@ -1,0 +1,56 @@
+.lista-container {
+  max-width: 960px;
+  margin: 40px auto;
+  padding: 32px;
+  background-color: var(--primary);
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.lista-container h2 {
+  font-size: 26px;
+  margin-bottom: 24px;
+  color: var(--white-and-blue);
+  text-align: center;
+}
+
+.lista-ocorrencias {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.item-ocorrencia {
+  background-color: var(--primary);
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  padding: 16px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.item-ocorrencia:hover {
+  box-shadow: 0 4px 16px rgba(0, 119, 255, 0.15);
+}
+
+.item-ocorrencia p {
+  margin: 4px 0;
+  color: #333;
+  font-size: 20px;
+  transition: max-height 0.3s ease;
+}
+
+
+.item-ocorrencia .detalhes {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+
+.item-ocorrencia.expandido .detalhes {
+  max-height: 500px;
+  margin-top: 12px;
+}

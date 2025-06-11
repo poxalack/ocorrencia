@@ -1,0 +1,150 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+:root {
+  --bg-color: #fdfdfd;
+  --text-color: #e7e6e6;
+  --label-color: #ffffff;
+  --input-bg: #000000;
+  --input-border: #ccc;
+  --input-focus: #0077ff;
+  --button-bg: #0077ff;
+  --button-hover: #005fcc;
+  --highlight-bg: #00030a;
+  --highlight-border: #0077ff;
+}
+
+
+[data-theme="dark"] {
+  --bg-color: #1e1e1e;  
+  --text-color: #f5f5f5;
+  --label-color: #d3d3d3;
+  --input-bg: #2c2c2c;
+  --input-border: #444;
+  --input-focus: #339dff;
+  --button-bg: #339dff;
+  --button-hover: #237ccc;
+  --highlight-bg: #2a3b4c;
+  --highlight-border: #339dff;
+}
+
+
+.occurrence-container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 32px;
+  border-radius: 12px;
+  font-family: 'Segoe UI', sans-serif;
+  min-height: calc(100vh - 64px); 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.occurrence-container h2 {
+  margin-bottom: 28px;
+  font-size: 26px;
+  text-align: center;
+  color: var(--text-color);
+}
+
+
+.input-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+
+.input-group {
+  flex: 1;
+  min-width: 260px;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+.input-group label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--label-color);
+}
+
+
+.input-group input,
+.input-group select {
+  width: 100%;
+  padding: 10px 14px;
+  background-color: var(--input-bg);
+  border: 1px solid var(--input-border);
+  border-radius: 8px;
+  font-size: 15px;
+  color: var(--text-color);
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+  border-color: var(--input-focus);
+  box-shadow: 0 0 0 2px rgba(0, 119, 255, 0.2);
+  outline: none;
+}
+
+
+.full-width {
+  flex: 1 0 100%;
+}
+
+
+button {
+  margin-top: 24px;
+  padding: 12px 28px;
+  background-color: var(--button-bg);
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.25s;
+}
+
+button:hover {
+  background-color: var(--button-hover);
+}
+
+
+.resultado-ocorrencia {
+  margin-top: 36px;
+  padding: 24px;
+  background-color: var(--highlight-bg);
+  border-left: 6px solid var(--highlight-border);
+  border-radius: 10px;
+  width: 100%;
+}
+
+.resultado-ocorrencia h3 {
+  margin-bottom: 16px;
+  font-size: 20px;
+  color: var(--input-focus);
+}
+
+.resultado-ocorrencia p {
+  margin: 6px 0;
+  font-size: 15px;
+  color: var(--text-color);
+}
