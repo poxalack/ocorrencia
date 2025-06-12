@@ -2,10 +2,10 @@
   max-width: 960px;
   margin: 40px auto;
   padding: 32px;
-  background-color: var(--primary);
+  background-color: var(--secondary);
   border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
   font-family: 'Segoe UI', sans-serif;
+   box-shadow: 0 4px 12px rgb(0, 0, 0, 1);
 }
 
 .lista-container h2 {
@@ -22,8 +22,8 @@
 }
 
 .item-ocorrencia {
-  background-color: var(--primary);
-  border: 1px solid #ccc;
+  background-color: var(--secondary-contraria);
+  border: 1px solid var(--white-and-blue);
   border-radius: 10px;
   margin-bottom: 16px;
   padding: 16px 20px;
@@ -37,7 +37,7 @@
 
 .item-ocorrencia p {
   margin: 4px 0;
-  color: #333;
+  color: var(--color-white-and-black);
   font-size: 20px;
   transition: max-height 0.3s ease;
 }

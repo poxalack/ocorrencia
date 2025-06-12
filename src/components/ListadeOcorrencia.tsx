@@ -32,10 +32,11 @@ export default function ListadeOcorrencia() {
 
   return (
     <>
+
       <div className="main-home">
         <div className="head">
           <div className="head-titulo">
-            <h1><a href="/" className="h1-head">Ocorrências</a></h1>
+            <h1><a href="/home" className="h1-head">Ocorrências</a></h1>
           </div>
           <div className="li-button">
             <li className="li-head">
@@ -45,32 +46,34 @@ export default function ListadeOcorrencia() {
             <button className="botao-tema" onClick={alternarTema}>Tema</button>
           </div>
         </div>
-        <h1></h1>
       </div>
-      <div className="lista-container">
-        <h2>HISTÓRICO DE OCORRÊNCIAS</h2>
-        {ocorrencias.length === 0 ? (
-          <p>Nenhuma ocorrência registrada.</p>
-        ) : (
-          <ul className="lista-ocorrencias">
-            {ocorrencias.map((oc, index) => (
-              <li
-                key={index}
-                className={`item-ocorrencia ${expandido === index ? 'expandido' : ''}`}
-                onClick={() => toggleExpandir(index)}
-              >
-                <p><strong>Aluno:</strong> {oc.alunoNome}</p>
-                <p><strong>Data:</strong> {oc.data}</p>
-                <div className="detalhes">
-                  <p><strong>Turma:</strong> {oc.alunoTurma}</p>
-                  <p><strong>Professor:</strong> {oc.professorNome}</p>
-                  <p><strong>Disciplina:</strong> {oc.disciplina}</p>
-                  <p><strong>Descrição:</strong> {oc.descricao}</p>
-                </div>
-              </li>
-            ))}
-          </ul>
-        )}
+      <h1></h1>
+      <div className="main-ocorrencia">
+        <div className="lista-container">
+          <h2>HISTÓRICO DE OCORRÊNCIAS</h2>
+          {ocorrencias.length === 0 ? (
+            <p>Nenhuma ocorrência registrada.</p>
+          ) : (
+            <ul className="lista-ocorrencias">
+              {ocorrencias.map((oc, index) => (
+                <li
+                  key={index}
+                  className={`item-ocorrencia ${expandido === index ? 'expandido' : ''}`}
+                  onClick={() => toggleExpandir(index)}
+                >
+                  <p><strong>Aluno:</strong> {oc.alunoNome}</p>
+                  <p><strong>Data:</strong> {oc.data}</p>
+                  <div className="detalhes">
+                    <p><strong>Turma:</strong> {oc.alunoTurma}</p>
+                    <p><strong>Professor:</strong> {oc.professorNome}</p>
+                    <p><strong>Disciplina:</strong> {oc.disciplina}</p>
+                    <p><strong>Descrição:</strong> {oc.descricao}</p>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
       </div>
     </>
   )

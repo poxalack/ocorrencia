@@ -23,7 +23,7 @@ export default function Home() {
             <div className="main-home">
                 <div className="head">
                     <div className="head-titulo">
-                        <h1><a href="/" className="h1-head">Ocorrências</a></h1>
+                        <h1><a href="/home" className="h1-head">Ocorrências</a></h1>
                     </div>
                     <div className="li-button">
                         <li className="li-head">

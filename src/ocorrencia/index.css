@@ -22,7 +22,7 @@
     --secondary-contraria: #F4F4F4;
     --white-and-black: #F4F4F4;
     --color-white-and-black: black;
-    --white-and-blue: #1E3A8A;
+    --white-and-blue: #0077ff;
 }
 a {
     color: var(--white-and-black);
@@ -44,7 +44,7 @@ ol-head {
     flex-direction: row;
 }
 .botao-login {
-    background-color: #1E3A8A;
+    background-color: var(--white-and-blue);
     color: white;
     border: none;
     padding: 8px 8px;
@@ -97,7 +97,7 @@ ol-head {
     font-family: "Roboto", sans-serif;
     font-size: 9rem;
     opacity: 0.8;
-    color: #1E3A8A;
+    color: var(--white-and-blue);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
 }
 .p-main {
