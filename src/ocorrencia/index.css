@@ -136,13 +136,49 @@ ol-head {
     transform: scale(0.98);
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1024px) {
   .h1-main {
-    font-size: 2rem;
+    font-size: 6rem;
   }
 
   .p-main {
-    font-size: 0.95rem;
+    font-size: 1.2rem;
+    padding: 0 20px;
+  }
+
+  .head {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .li-head {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .h1-main {
+    font-size: 4rem;
+  }
+
+  .p-main {
+    font-size: 1.1rem;
+  }
+
+  .h1-head {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .h1-main {
+    font-size: 2.5rem;
+  }
+
+  .p-main {
+    font-size: 1rem;
   }
 
   .h1-head {
@@ -152,7 +188,10 @@ ol-head {
   .botao-login,
   .botao-tema {
     font-size: 12px;
-    padding: 5px 10px;
-    margin: 6px;
+    padding: 6px 12px;
+  }
+
+  .head {
+    padding: 10px;
   }
 }

@@ -175,3 +175,87 @@ button:hover {
   font-family: "Roboto", sans-serif;
   color: var(--color-white-and-black);
 }
+
+@media (max-width: 1024px) {
+  .occurrence-container {
+    padding: 24px;
+  }
+
+  .input-row {
+    gap: 16px;
+  }
+
+  .input-group {
+    min-width: 220px;
+    max-width: 100%;
+  }
+
+  .occurrence-container h2 {
+    font-size: 22px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .occurrence-container {
+    padding: 20px;
+  }
+
+  .input-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .input-group {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .resultado-ocorrencia {
+    padding: 20px;
+  }
+
+  .resultado-ocorrencia h3 {
+    font-size: 18px;
+  }
+
+  .resultado-ocorrencia p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .occurrence-container h2 {
+    font-size: 20px;
+  }
+
+  .input-group label {
+    font-size: 14px;
+  }
+
+  .input-group input,
+  .input-group select {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px 24px;
+  }
+
+  .resultado-ocorrencia {
+    padding: 16px;
+  }
+
+  .resultado-ocorrencia h3 {
+    font-size: 16px;
+  }
+
+  .resultado-ocorrencia p {
+    font-size: 13px;
+  }
+}
