@@ -8,7 +8,7 @@
 :root {
     --primary: white;
     --primary-contraria: #444;
-    --secondary: #F4F4F4;
+    --secondary: 		#DDDDDD;
     --secondary-contraria: #2C2C2C;
     --white-and-black: black;
     --color-white-and-black: white;
@@ -22,7 +22,7 @@
     --secondary-contraria: #F4F4F4;
     --white-and-black: #F4F4F4;
     --color-white-and-black: black;
-    --white-and-blue: #0077ff;
+    --white-and-blue: 	#1D4ED8;
 }
 a {
     color: var(--white-and-black);
@@ -79,10 +79,13 @@ ol-head {
     justify-content: space-between;
     align-items: center;
     background-color: var(--secondary);
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px ;
+    width: 100%;
 }
 
 .main {
-    background-image: url('./src/assets/main-index.png');
+    background-image: url('./src/assets/main-index.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -125,7 +128,7 @@ ol-head {
 
 .botao-tema:hover {
     background-color: 	var(--white-and-black);
-    box-shadow: 0 4px 12px rgba(30, 64, 175, 0.3);
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.451);
 }
 
 .botao-tema:active {

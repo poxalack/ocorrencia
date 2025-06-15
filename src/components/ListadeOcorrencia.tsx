@@ -33,21 +33,21 @@ export default function ListadeOcorrencia() {
   return (
     <>
 
-      <div className="main-home">
-        <div className="head">
-          <div className="head-titulo">
-            <h1><a href="/home" className="h1-head">Ocorrências</a></h1>
-          </div>
-          <div className="li-button">
-            <li className="li-head">
-              <ol><Link to="/ocorrencia" className="aplicar-a">APLICAR</Link></ol>
-              <ol><Link to="/historicoOcorrencia" className="historico-a">HISTÓRICO</Link></ol>
-            </li>
-            <button className="botao-tema" onClick={alternarTema}>Tema</button>
-          </div>
+
+      <div className="head">
+        <div className="head-titulo">
+          <h1><a href="/home" className="h1-head">Ocorrências</a></h1>
+        </div>
+        <div className="li-button">
+          <li className="li-head">
+            <ol><Link to="/ocorrencia" className="aplicar-a">APLICAR</Link></ol>
+            <ol><Link to="/historicoOcorrencia" className="historico-a">HISTÓRICO</Link></ol>
+          </li>
+          <button className="botao-tema" onClick={alternarTema}>Tema</button>
         </div>
       </div>
-      <h1></h1>
+
+
       <div className="main-ocorrencia">
         <div className="lista-container">
           <h2>HISTÓRICO DE OCORRÊNCIAS</h2>

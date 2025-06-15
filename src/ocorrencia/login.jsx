@@ -16,7 +16,7 @@ export default function Login() {
                 <div className="two">
                     <a href=""><img src="./src/assets/login-two.png" alt="" className="login-img" /></a>
                     <h1 className="h1-login">Login</h1>
-                    <input type="email" placeholder="G-mail ou Matricula" className="input-two" />
+                    <input type="email" placeholder="E-mail ou Matricula" className="input-two" />
                     <input type="password" placeholder="Senha" className="input-two" />
                     <Link to={'./home'}>
                         <button className="botao-entrar">Entrar</button>
