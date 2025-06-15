@@ -135,3 +135,24 @@ ol-head {
     background-color: 	var(--white-and-black);
     transform: scale(0.98);
 }
+
+@media (max-width: 480px) {
+  .h1-main {
+    font-size: 2rem;
+  }
+
+  .p-main {
+    font-size: 0.95rem;
+  }
+
+  .h1-head {
+    font-size: 1.2rem;
+  }
+
+  .botao-login,
+  .botao-tema {
+    font-size: 12px;
+    padding: 5px 10px;
+    margin: 6px;
+  }
+}
