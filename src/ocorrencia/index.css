@@ -85,7 +85,7 @@ ol-head {
 }
 
 .main {
-    background-image: url('./src/assets/main-index.jpg');
+    background-image: url('../assets/main-index.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
